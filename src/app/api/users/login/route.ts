@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { connect } from "@/dbConfig/dbConfig";
 import User from "@/models/userModel.js";
 // in next js we have dedicated req and res
