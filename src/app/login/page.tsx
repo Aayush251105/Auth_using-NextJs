@@ -52,7 +52,7 @@ export default function LoginPage() {
         value={user.email}
         onChange={(e) => setUser({ ...user, email: e.target.value })}
         placeholder="email"
-        className="p-2 border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
       />
       <label htmlFor="password">Password</label>
       <input
@@ -61,7 +61,7 @@ export default function LoginPage() {
         value={user.password}
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder="password"
-        className="p-2 border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
       />
       <button
         onClick={onLogin}
@@ -70,6 +70,7 @@ export default function LoginPage() {
         {buttonDisabled ? "Enter value" : "Login here"}
       </button>
       <Link href="/signup">visit Signup page</Link>
+    
     </div>
   );
 }
