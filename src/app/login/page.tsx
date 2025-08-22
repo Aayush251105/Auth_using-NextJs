@@ -42,7 +42,9 @@ export default function LoginPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="">{loading ? "loading" : "Login"}</h1>
+      <div className="flex flex-col items-center justify-center border hover:border-blue-400 border-gray-300 p-20 rounded-2xl hover:shadow-lg shadow-blue-400">
+
+      <h1 className="font-medium text-4xl mb-3 font-serif italic tracking-wider text-blue-400 ">{loading ? "loading" : "Login"}</h1>
       <hr />
 
       <label htmlFor="email">Email</label>
@@ -65,11 +67,12 @@ export default function LoginPage() {
       />
       <button
         onClick={onLogin}
-        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none"
+        className="p-2  rounded-lg mb-4 focus:outline-none hover:bg-amber-400 bg-amber-600"
       >
         {buttonDisabled ? "Enter value" : "Login here"}
       </button>
       <Link href="/signup">visit Signup page</Link>
+      </div>
     
     </div>
   );
